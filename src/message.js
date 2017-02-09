@@ -1,9 +1,9 @@
-import getCurrentYear from 'util';
+import util from './util';
 
 const formatMessage = (message) => {
-  return message + '...essa msg pertence ao ano de ' + getCurrentYear();
+ return util.convertStringToUpperCase(message);
 }
 
 export default {
-  formatMessage
+ formatMessage
 }
